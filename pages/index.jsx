@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "../components/Image";
 import IndexMeta from "../components/index/IndexMeta";
 import Logo from "../public/img/logo.svg";
 import ArtIcon from "../public/img/index/art.svg";
@@ -262,7 +262,6 @@ export default function Home() {
                             </li>
                         </ul>
                     </section>
-
                     <div className="join">
                         <a href="https://discord.gg/xwJuJawYFz">
                             <IconBrandDiscord strokeWidth={1.9} size={20} />
