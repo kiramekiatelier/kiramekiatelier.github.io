@@ -1,62 +1,91 @@
 import Image from "next/image";
 import IndexMeta from "../components/index/IndexMeta";
-import styles from "../styles/Home.module.scss";
+import Logo from "../public/img/logo.svg";
+import ArtIcon from "../public/img/index/art.svg";
+import GraphicsIcon from "../public/img/index/graphics.svg";
+import CodeIcon from "../public/img/index/code.svg";
+import VideoIcon from "../public/img/index/video.svg";
+import WritingIcon from "../public/img/index/writing.svg";
 
 export default function Home() {
     return (
-        <div className={styles.container}>
+        <>
             <IndexMeta />
-
-            <main className={styles.main}>
-                <h1 className={styles.title}>
-                    Welcome to <a href="https://nextjs.org">Next.js!</a>
-                </h1>
-
-                <p className={styles.description}>
-                    Get started by editing{" "}
-                    <code className={styles.code}>pages/index.js</code>
-                </p>
-
-                <div className={styles.grid}>
-                    <a href="https://nextjs.org/docs" className={styles.card}>
-                        <h2>Documentation &rarr;</h2>
-                        <p>
-                            Find in-depth information about Next.js features and
-                            API.
-                        </p>
-                    </a>
-
-                    <a href="https://nextjs.org/learn" className={styles.card}>
-                        <h2>Learn &rarr;</h2>
-                        <p>
-                            Learn about Next.js in an interactive course with
-                            quizzes!
-                        </p>
-                    </a>
-
-                    <a
-                        href="https://github.com/vercel/next.js/tree/canary/examples"
-                        className={styles.card}
-                    >
-                        <h2>Examples &rarr;</h2>
-                        <p>
-                            Discover and deploy boilerplate example Next.js
-                            projects.
-                        </p>
-                    </a>
-
-                    <a
-                        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                        className={styles.card}
-                    >
-                        <h2>Deploy &rarr;</h2>
-                        <p>
-                            Instantly deploy your Next.js site to a public URL
-                            with Vercel.
-                        </p>
-                    </a>
+            <main>
+                <div className="index-wrapper">
+                    <div className="logo">
+                        <Image
+                            src={Logo}
+                            quality="100"
+                            objectFit="fill"
+                            alt="logo"
+                            priority
+                        />
+                    </div>
+                    <div className="icons-desc">
+                        art · graphics · code · video · writing
+                    </div>
+                    <div className="icons">
+                        <div className="icons__art">
+                            <div className="svg-wrapper">
+                                <Image
+                                    src={ArtIcon}
+                                    quality="100"
+                                    objectFit="fill"
+                                    alt="art"
+                                />
+                            </div>
+                        </div>
+                        <div className="icons__graphics">
+                            <div className="svg-wrapper">
+                                <Image
+                                    src={GraphicsIcon}
+                                    quality="100"
+                                    objectFit="fill"
+                                    alt="graphics"
+                                />
+                            </div>
+                        </div>
+                        <div className="icons__code">
+                            <div className="svg-wrapper">
+                                <Image
+                                    src={CodeIcon}
+                                    quality="100"
+                                    objectFit="fill"
+                                    alt="code"
+                                />
+                            </div>
+                        </div>
+                        <div className="icons__video">
+                            <div className="svg-wrapper">
+                                <Image
+                                    src={VideoIcon}
+                                    quality="100"
+                                    objectFit="fill"
+                                    alt="video"
+                                />
+                            </div>
+                        </div>
+                        <div className="icons__writing">
+                            <div className="svg-wrapper">
+                                <Image
+                                    src={WritingIcon}
+                                    quality="100"
+                                    objectFit="fill"
+                                    alt="writing"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="description">
+                        A Discord community for creative works related to
+                        Japanese media!
+                    </div>
+                    <div className="join">
+                        <a href="https://discord.gg/xwJuJawYFz">Join now!</a>
+                    </div>
                 </div>
             </main>
-        </div>
+        </>
     );
 }
