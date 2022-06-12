@@ -4,13 +4,13 @@
     min-height: 100vh;
     color: #2c2c89;
     font-family: "Be Vietnam Pro", sans-serif;
-    background: linear-gradient(to top, #9595c477 0, transparent 12em);
+    background: linear-gradient(to top, #9595c477 0, transparent 24em);
 
     .logo {
         width: 500px;
         max-width: 90vw;
         height: auto;
-        margin: 4.5em auto 3em;
+        margin: 4.5em auto 4.5em;
     }
 
     .icons-desc {
@@ -26,6 +26,11 @@
         div {
             white-space: nowrap;
         }
+
+        @media screen and (max-width: 600px) {
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
     }
 
     .icons {
@@ -35,6 +40,9 @@
         align-content: center;
         justify-content: center;
         margin: -0.5em 0 0;
+        @media screen and (max-width: 600px) {
+            margin: 0.5em 0 0;
+        }
 
         > div {
             background: #fff;
@@ -43,6 +51,10 @@
             padding: 15px;
             &:not(:last-child) {
                 margin-right: 1.75em;
+
+                @media screen and (max-width: 600px) {
+                    margin-right: 0.75em;
+                }
             }
         }
 
@@ -105,8 +117,9 @@
         .member {
             border: solid 2px #ebebfb;
             border-radius: 0.5em;
-            margin-top: 40px;
-            padding: 0 1.25em 1.25em;
+            margin-top: 20px;
+            padding: 1em 1.25em 1.25em;
+            position: relative;
         }
 
         .member-icon {
@@ -117,6 +130,8 @@
             img {
                 border-radius: 999px;
             }
+            position: absolute;
+            right: 1.25em;
         }
 
         .member-name {
@@ -143,6 +158,10 @@
             opacity: 0.5;
             display: flex;
             font-size: 0.8em;
+
+            svg {
+                margin-right: 0.25em;
+            }
         }
 
         .member-links {
@@ -200,6 +219,10 @@
         ul {
             list-style: none;
             padding: 0;
+        }
+
+        a {
+            color: inherit;
         }
     }
 

@@ -15,10 +15,10 @@ function IndexMeta() {
             <meta property="og:type" content="website" />
             <meta property="og:url" content={SITE_URL} />
             <meta property="og:title" content={SITE_TITLE} />
-            {/* <meta property="og:description" content={META_DESC} />
+            <meta property="og:description" content={META_DESC} />
             <meta
                 property="og:image"
-                content={`${SITE_URL}img/home_banner.png`}
+                content={`${SITE_URL}/img/home_banner.png`}
             />
             <meta property="twitter:card" content="summary_large_image" />
             <meta property="twitter:url" content={SITE_URL} />
@@ -26,9 +26,9 @@ function IndexMeta() {
             <meta property="twitter:description" content={META_DESC} />
             <meta
                 property="twitter:image"
-                content={`${SITE_URL}img/home_banner.png`}
+                content={`${SITE_URL}/img/home_banner.png`}
             />
-            <meta property="twitter:creator" content={TWITTER_UN} /> */}
+            <meta property="twitter:creator" content={TWITTER_UN} />
             {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link
                 rel="preconnect"
