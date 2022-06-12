@@ -1,5 +1,8 @@
 import Head from "next/head";
 import "normalize.css/normalize.css";
+import "@fontsource/be-vietnam-pro/400.css";
+import "@fontsource/be-vietnam-pro/700.css";
+import "@fontsource/be-vietnam-pro/500-italic.css";
 import "../styles/globals.scss";
 import { THEME_COLOR } from "../lib/constants";
 
